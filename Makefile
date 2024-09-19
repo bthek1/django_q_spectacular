@@ -24,3 +24,16 @@ collectstatic: ## Collect static files
 test: ## Run tests
 	pytest
 	
+
+install-redis: ## Install and start Redis
+	@echo "Installing Redis..."
+	@chmod +x ./scripts/install_redis.sh
+	@./scripts/install_redis.sh
+	@echo "Redis installation complete!"
+
+
+uninstall-redis: ## Uninstall Redis
+	@echo "Uninstalling Redis..."
+	@chmod +x ./scripts/uninstall_redis.sh
+	@./scripts/uninstall_redis.sh
+	@echo "Redis uninstallation complete!"
