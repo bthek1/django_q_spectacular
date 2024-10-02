@@ -60,8 +60,15 @@ redis = "^5.0.8"
 mkdocs = "^1.6.1"
 mkdocs-material = "^9.5.39"
 mkdocstrings = {extras = ["python"], version = "^0.26.1"}
+jupyter = "^1.1.1"
+nest-asyncio = "^1.6.0"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings"
+python_files = ["*test*.py"]
