@@ -1,0 +1,27 @@
+site_name: My Django Project Documentation
+site_author: Your Name
+site_description: A description of your project's documentation.
+site_dir: templates/todo
+nav:
+  - Home: index.md
+  - Guide: guide.md
+  - API Reference:
+      - Models: api/models.md
+      - Views: api/views.md
+      - Serializers: api/serializers.md
+theme:
+  name: material
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          setup_commands:
+            - import sys
+            - sys.path.append('../')  # Add the parent directory of 'docs' to sys.path
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: '#'
+            

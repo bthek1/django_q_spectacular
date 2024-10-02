@@ -57,6 +57,9 @@ django-annoying = "^0.10.7"
 freezegun = "^1.5.1"
 django-q2 = "^1.7.2"
 redis = "^5.0.8"
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.5.39"
+mkdocstrings = {extras = ["python"], version = "^0.26.1"}
 
 
 [build-system]
